@@ -1,0 +1,18 @@
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\bin\Release\harungulgun.exe.config
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\bin\Release\harungulgun.exe
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\bin\Release\harungulgun.pdb
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\Simple Styles.baml
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\AnaEkran.g.cs
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\MainWindow.g.cs
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\App.g.cs
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun_MarkupCompile.cache
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun_MarkupCompile.lref
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\App.baml
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\AnaEkran.baml
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\MainWindow.baml
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun.g.resources
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun.Properties.Resources.resources
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun.csproj.GenerateResource.Cache
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun.exe
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun.pdb
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun.csprojResolveAssemblyReference.cache

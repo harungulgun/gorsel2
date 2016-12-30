@@ -1,0 +1,16 @@
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\bin\Debug\harungulgun.exe.config
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\bin\Debug\harungulgun.exe
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\bin\Debug\harungulgun.pdb
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\harungulgun.csprojResolveAssemblyReference.cache
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\MainWindow.g.cs
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\App.g.cs
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\harungulgun_MarkupCompile.cache
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\harungulgun_MarkupCompile.lref
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\MainWindow.baml
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\harungulgun.g.resources
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\harungulgun.Properties.Resources.resources
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\harungulgun.csproj.GenerateResource.Cache
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\harungulgun.exe
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\harungulgun.pdb
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\AnaEkran.g.cs
+C:\Users\HACKTEAM\Desktop\FinalGörsel2\harungulgun\harungulgun\obj\Debug\AnaEkran.baml
