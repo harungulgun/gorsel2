@@ -12,7 +12,7 @@
         <Label x:Name="label_Copy" Content="Parola:&#xA;" Margin="130,147.92,0,136.08" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="85"/>
         <TextBox BorderBrush="Bisque" x:Name="kulad" HorizontalAlignment="Right" Height="23" Margin="0,116,62,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="195" ToolTip="Kullanıcı Adını Gir"/>
         <TextBox BorderBrush="Bisque" x:Name="parola" HorizontalAlignment="Right" TextWrapping="Wrap" Text="" Width="195" ToolTip="Şifreni Gir" Margin="0,157,62,0" Height="23" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Giriş Yap" Margin="0,0,107,79" VerticalAlignment="Bottom" Height="35" FontSize="20" HorizontalAlignment="Right" Width="130" Click="button_Click" FontStyle="Italic">
+        <Button x:Name="button" Content="Giriş Yap" Margin="0,0,87,79" VerticalAlignment="Bottom" Height="35" FontSize="20" HorizontalAlignment="Right" Width="130" Click="button_Click" FontStyle="Italic">
             <Button.CacheMode>
                 <BitmapCache/>
             </Button.CacheMode>

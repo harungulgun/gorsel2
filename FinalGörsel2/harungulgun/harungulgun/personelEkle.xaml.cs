@@ -15,22 +15,21 @@ using System.Windows.Shapes;
 namespace harungulgun
 {
     /// <summary>
-    /// Interaction logic for AnaEkran.xaml
+    /// Interaction logic for personelEkle.xaml
     /// </summary>
-    public partial class AnaEkran : Window
+    public partial class personelEkle : Window
     {
-
-        public AnaEkran()
+        public personelEkle()
         {
             InitializeComponent();
-              
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            personelEkle per = new personelEkle();
-            per.Show();
-            this.Hide();
+            AnaEkran ana = new AnaEkran();
+            ana.Show();
+            this.Close();
+           
         }
     }
 }
