@@ -23,11 +23,11 @@ namespace harungulgun
     public partial class urungiris : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
-        System.Windows.Threading.DispatcherTimer zaman;
+        DispatcherTimer zaman;
         public urungiris()
         {
             InitializeComponent();
-            zaman = new System.Windows.Threading.DispatcherTimer();
+            zaman = new DispatcherTimer();
             zaman.Interval = new TimeSpan(0,0,1);
             zaman.Tick += Zaman_Tick;
             zaman.Start();

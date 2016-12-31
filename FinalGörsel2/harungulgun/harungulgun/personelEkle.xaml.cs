@@ -29,11 +29,11 @@ namespace harungulgun
             InitializeComponent();
             cinsiyet.Items.Add("Erkek");
             cinsiyet.Items.Add("Kız");
-            zaman = new System.Windows.Threading.DispatcherTimer();
+            zaman = new DispatcherTimer();
             zaman.Interval = new TimeSpan(0, 0, 1);
             zaman.Tick += Zaman_Tick;
             zaman.Start();
-
+          
         }
         private void Zaman_Tick(object sender, EventArgs e)
         {
