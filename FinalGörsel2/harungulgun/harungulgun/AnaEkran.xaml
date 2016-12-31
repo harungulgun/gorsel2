@@ -21,6 +21,7 @@
             </Menu.Background>
             <MenuItem Header="Ekle" FontSize="19">
                 <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974" Click="MenuItem_Click"/>
+                <MenuItem Header="Firma Ekle"  FontSize="15" Background="#FF789974"/>
             </MenuItem>
             <MenuItem Header="Ürünler" FontSize="19">
                 <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974"/>

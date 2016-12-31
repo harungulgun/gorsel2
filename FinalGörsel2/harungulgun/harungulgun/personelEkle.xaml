@@ -22,6 +22,7 @@
             </Menu.Background>
             <MenuItem Header="Ekle" FontSize="19">
                 <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974"/>
+                <MenuItem Header="Firma Ekle"  FontSize="15" Background="#FF789974"/>
             </MenuItem>
             <MenuItem Header="Ürünler" FontSize="19">
                 <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974"/>
@@ -42,14 +43,14 @@
         <TextBox BorderBrush="Bisque" x:Name="perad" HorizontalAlignment="Left" Height="28.378" Margin="210.936,138.755,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214.064" ToolTip="Personel Adını Gir"/>
         <TextBox BorderBrush="Bisque" x:Name="persoyad" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="214.064" ToolTip="Personel Soyadını Gir" Margin="210.936,189.342,0,0" Height="28.377" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"/>
 
-        <TextBox BorderBrush="Bisque" x:Name="cins" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="214.064" ToolTip=" Personel Cinsiyetini Gir" Margin="209.436,334.065,0,0" Height="28.377" VerticalAlignment="Top"/>
-        <TextBox BorderBrush="Bisque" x:Name="Giris_Tarihi" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="214.064" ToolTip="Tarihi Gir" Margin="207.936,387.82,0,0" Height="28.378" VerticalAlignment="Top"/>
+        <TextBox BorderBrush="Bisque" x:Name="cins" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="214.064" ToolTip=" Personel Cinsiyetini Gir" Margin="210.936,248.565,0,0" Height="28.377" VerticalAlignment="Top"/>
+        <TextBox BorderBrush="Bisque" x:Name="Giris_Tarihi" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="214.064" ToolTip="Tarihi Gir" Margin="210.936,305.32,0,0" Height="28.378" VerticalAlignment="Top"/>
         <Label x:Name="label" Content="TC Kimlik Numarası:&#xA;" Margin="32,84.566,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFBFBFBF" Height="33.215" HorizontalAlignment="Left" Width="129.536"/>
         <Label x:Name="label_Copy" Content="Adı:&#xA;" Margin="32,123.95,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="93.31" Height="43.183" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy1" Content="Soyadı:&#xA;" Margin="32,187.034,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFBFBFBF" Height="33.215" HorizontalAlignment="Left" Width="93.31"/>
-        <Label x:Name="label_Copy2" Content="Cinsiyeti&#xA;" Margin="35,0,0,151.752" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="93.31" Height="43.183" VerticalAlignment="Bottom"/>
-        <Label x:Name="label_Copy3" Content="Giriş Tarihi:" Margin="35,0,0,90.061" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="102.092" Height="48.119" VerticalAlignment="Bottom"/>
-        <Button x:Name="button" Content="Ekle" Margin="213.936,0,0,18.5" VerticalAlignment="Bottom" Height="43.183" FontSize="20" HorizontalAlignment="Left" Width="142.709" FontStyle="Italic">
+        <Label x:Name="label_Copy2" Content="Cinsiyeti&#xA;" Margin="32,248.565,0,237.252" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="93.31"/>
+        <Label x:Name="label_Copy3" Content="Giriş Tarihi:" Margin="32,0,0,175.561" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="102.092" Height="48.119" VerticalAlignment="Bottom"/>
+        <Button x:Name="button" Content="Ekle" Margin="210.936,0,0,104" VerticalAlignment="Bottom" Height="43.183" FontSize="20" HorizontalAlignment="Left" Width="142.709" FontStyle="Italic">
             <Button.CacheMode>
                 <BitmapCache/>
             </Button.CacheMode>
@@ -63,11 +64,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <DataGrid x:Name="dataGrid" Margin="455,82,21,20" Background="#FF5A7678"/>
-        <TextBox BorderBrush="Bisque" x:Name="kuladı" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="214.064" ToolTip=" Kullanıcı Adını Gir" Margin="209.436,230.565,0,0" Height="28.377" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"/>
-        <TextBox BorderBrush="Bisque" x:Name="sifresi" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="214.064" ToolTip="Tarihi Gir" Margin="209.436,287.32,0,0" Height="28.378" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy4" Content="Kullanıcı Adı:&#xA;" Margin="30.5,230.565,0,255.252" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="93.31"/>
-        <Label x:Name="label_Copy5" Content="Şİfresi:" Margin="30.5,0,0,201.061" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="102.092" Height="48.119" VerticalAlignment="Bottom"/>
+        <DataGrid x:Name="dataGrid" Margin="455,82,21,74" Background="#FF5A7678"/>
 
     </Grid>
 </Window>

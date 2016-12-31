@@ -36,5 +36,3 @@ C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\harungulgun.csproj.GenerateResource.Cache
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\personelEkle.g.cs
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\personelEkle.baml
-C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\urungoster.g.cs
-C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\urungoster.baml
