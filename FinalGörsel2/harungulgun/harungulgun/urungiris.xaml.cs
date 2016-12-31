@@ -30,5 +30,10 @@ namespace harungulgun
             ana.Show();
             this.Hide();
         }
+
+        private void urunekle_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

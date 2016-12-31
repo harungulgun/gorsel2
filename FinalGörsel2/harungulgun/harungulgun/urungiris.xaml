@@ -26,7 +26,7 @@
         <Label x:Name="label_Copy" Content="Ürün Adedi:&#xA;" Margin="21.72,103.513,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="75.891" Height="39.353" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy1" Content="Üretici Firma:&#xA;" Margin="20.72,148.987,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFBFBFBF" Height="30.269" HorizontalAlignment="Left" Width="75.891"/>
         <Label x:Name="label_Copy2" Content="Giriş Tarihi:&#xA;" Margin="20.16,0,0,144.479" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="75.891" Height="39.352" VerticalAlignment="Bottom"/>
-        <Button x:Name="urunekle" Content="Ekle" Margin="139.695,0,0,72.953" VerticalAlignment="Bottom" Height="39.353" FontSize="20" FontStyle="Italic" HorizontalAlignment="Left" Width="116.069">
+        <Button x:Name="urunekle" Content="Ekle" Margin="139.695,0,0,72.953" VerticalAlignment="Bottom" Height="39.353" FontSize="20" FontStyle="Italic" HorizontalAlignment="Left" Width="116.069" Click="urunekle_Click">
             <Button.CacheMode>
                 <BitmapCache/>
             </Button.CacheMode>

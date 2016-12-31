@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="gelenpara" Height="300" Width="300">
-    <Grid>
-        
+        Title="gelenpara" Height="349.107" Width="562.376">
+    <Grid Margin="0,0,2.346,0.673">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF1D0A0A" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="label_Copy2" Content="Kimden :" Margin="43.22,32.343,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" Height="29.727" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94.327"/>
+        <TextBox BorderBrush="Bisque" x:Name="urunad" Height="25.861" Margin="130.255,35.389,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" ToolTip="Tc numarası Gir" HorizontalAlignment="Left" Width="91.605"/>
+        <Label x:Name="label_Copy" Content="Tutar :" Margin="43.22,79.343,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" Height="29.727" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94.327"/>
+        <TextBox BorderBrush="Bisque" x:Name="tutar" Height="25.861" Margin="129.255,77.389,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" ToolTip="Tc numarası Gir" HorizontalAlignment="Left" Width="91.605"/>
+        <Button x:Name="kasayaekle" Content="Kasaya Ekle&#xA;" Margin="44.195,142.701,0,135.38" FontSize="20" FontStyle="Italic" HorizontalAlignment="Left" Width="174.569">
+            <Button.CacheMode>
+                <BitmapCache/>
+            </Button.CacheMode>
+            <Button.BindingGroup>
+                <BindingGroup/>
+            </Button.BindingGroup>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>
