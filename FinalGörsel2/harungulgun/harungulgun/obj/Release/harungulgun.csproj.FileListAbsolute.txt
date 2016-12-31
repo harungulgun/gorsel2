@@ -67,3 +67,5 @@ C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\bin\Release\System.Web.Razor.xml
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\bin\Release\System.Web.WebPages.Deployment.xml
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\gelenpara.baml
+C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\personelSil.g.cs
+C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\personelSil.baml

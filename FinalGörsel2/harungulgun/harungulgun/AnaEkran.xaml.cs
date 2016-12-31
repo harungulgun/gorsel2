@@ -61,5 +61,12 @@ namespace harungulgun
             ode.Show();
             this.Hide();
         }
+
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
+        {
+            personelSil sil = new personelSil();
+            sil.Show();
+            this.Hide();
+        }
     }
 }

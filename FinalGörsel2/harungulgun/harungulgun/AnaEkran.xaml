@@ -19,8 +19,9 @@
                     <GradientStop Color="White" Offset="1"/>
                 </LinearGradientBrush>
             </Menu.Background>
-            <MenuItem Header="Ekle" FontSize="19">
+            <MenuItem Header="Personel" FontSize="19">
                 <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974" Click="MenuItem_Click"/>
+                <MenuItem Header="Personel Sil"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_5"/>
             </MenuItem>
             <MenuItem Header="Ürünler" FontSize="19">
                 <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974" Click="MenuItem_Click_1"/>
