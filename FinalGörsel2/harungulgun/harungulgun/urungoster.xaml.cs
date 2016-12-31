@@ -15,26 +15,13 @@ using System.Windows.Shapes;
 namespace harungulgun
 {
     /// <summary>
-    /// Interaction logic for personelEkle.xaml
+    /// Interaction logic for urungoster.xaml
     /// </summary>
-    public partial class personelEkle : Window
+    public partial class urungoster : Window
     {
-        public personelEkle()
+        public urungoster()
         {
             InitializeComponent();
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            AnaEkran ana = new AnaEkran();
-            ana.Show();
-            this.Close();
-           
-        }
-
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }
