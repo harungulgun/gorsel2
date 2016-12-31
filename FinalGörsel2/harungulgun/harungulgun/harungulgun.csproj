@@ -39,6 +39,7 @@
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -57,8 +58,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="odemeler.xaml.cs">
+      <DependentUpon>odemeler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="urungiris.xaml.cs">
+      <DependentUpon>urungiris.xaml</DependentUpon>
+    </Compile>
     <Compile Include="urungoster.xaml.cs">
       <DependentUpon>urungoster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="urunsil.xaml.cs">
+      <DependentUpon>urunsil.xaml</DependentUpon>
     </Compile>
     <Page Include="AnaEkran.xaml">
       <SubType>Designer</SubType>
@@ -79,6 +89,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="odemeler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="personelEkle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -87,7 +101,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="urungiris.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="urungoster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="urunsil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

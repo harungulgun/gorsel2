@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace harungulgun
 {
     /// <summary>
-    /// Interaction logic for urungoster.xaml
+    /// Interaction logic for gelenpara.xaml
     /// </summary>
-    public partial class urungoster : Window
+    public partial class gelenpara : Window
     {
-        public urungoster()
+        public gelenpara()
         {
             InitializeComponent();
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            AnaEkran ana = new AnaEkran();
-            ana.Show();
-            this.Hide();
         }
     }
 }

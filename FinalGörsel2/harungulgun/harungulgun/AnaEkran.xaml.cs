@@ -32,5 +32,34 @@ namespace harungulgun
             per.Show();
             this.Hide();
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            urungoster goster = new urungoster();
+            goster.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            urungiris gir = new urungiris();
+            gir.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            urunsil sil = new urunsil();
+            sil.Show();
+            this.Hide();
+
+        }
+
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
+        {
+            odemeler ode = new odemeler();
+            ode.Show();
+            this.Hide();
+        }
     }
 }

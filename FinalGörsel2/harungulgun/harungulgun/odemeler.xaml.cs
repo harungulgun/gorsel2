@@ -15,13 +15,23 @@ using System.Windows.Shapes;
 namespace harungulgun
 {
     /// <summary>
-    /// Interaction logic for urungoster.xaml
+    /// Interaction logic for odemeler.xaml
     /// </summary>
-    public partial class urungoster : Window
+    public partial class odemeler : Window
     {
-        public urungoster()
+        public odemeler()
         {
             InitializeComponent();
+            odemetur.Items.Add("Personel Ödemesi");
+            odemetur.Items.Add("Firma Ödemesi");
+            odemetur.Items.Add("Kırtasiye Ödemesi");
+            odemetur.Items.Add("Diğer Ödemeler");
+
+
+            odemetipi.Items.Add("TL");
+            odemetipi.Items.Add("USD");
+            odemetipi.Items.Add("Euro");
+            odemetipi.Items.Add("Çek");
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -29,6 +39,12 @@ namespace harungulgun
             AnaEkran ana = new AnaEkran();
             ana.Show();
             this.Hide();
+            
+        }
+
+        private void urunekle_Click(object sender, RoutedEventArgs e)
+        {
+         
         }
     }
 }

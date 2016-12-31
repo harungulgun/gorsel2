@@ -38,3 +38,9 @@ C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\personelEkle.baml
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\urungoster.g.cs
 C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\urungoster.baml
+C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\urungiris.g.cs
+C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\urungiris.baml
+C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\urunsil.g.cs
+C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\urunsil.baml
+C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\odemeler.g.cs
+C:\Users\HACKTEAM\Documents\GitHub\gorsel2\FinalGörsel2\harungulgun\harungulgun\obj\Release\odemeler.baml

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace harungulgun
 {
     /// <summary>
-    /// Interaction logic for urungoster.xaml
+    /// Interaction logic for urungiris.xaml
     /// </summary>
-    public partial class urungoster : Window
+    public partial class urungiris : Window
     {
-        public urungoster()
+        public urungiris()
         {
             InitializeComponent();
         }
