@@ -43,7 +43,7 @@ namespace harungulgun
             }
             else
             {
-                MessageBox.Show("Hataaa");
+             MessageBox.Show("Kullanıcı Adı veya Parola hatalı.","Hatalı Giriş",MessageBoxButton.OK,MessageBoxImage.Error);
             }
             bag.Close();
 
