@@ -59,7 +59,7 @@ namespace harungulgun
             sil.ExecuteNonQuery();
             sil.Dispose();
             bag.Close();
-            zamanab.Interval = new TimeSpan(0, 0, 0);
+            zamanab.Interval = new TimeSpan(0, 0, 3);
             zamanab.Tick += Zamanab_Tick;
             zamanab.Start();
         }
