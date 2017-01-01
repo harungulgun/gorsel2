@@ -54,7 +54,9 @@ namespace harungulgun
 
         private void urunekle_Click(object sender, RoutedEventArgs e)
         {
-            bag.Open();
+            if (sildata.SelectedIndex != -1)
+            {
+                bag.Open();
             DataRowView satir = (DataRowView)sildata.SelectedItem;
             if (sildata.SelectedIndex == -1) return;
             MySqlCommand sil = new MySqlCommand("delete from urunler where id='" + satir[0] + "'", bag);
@@ -65,6 +67,11 @@ namespace harungulgun
             zamanaba.Interval = new TimeSpan(0, 0, 3);
             zamanaba.Tick += Zamanaba_Tick;
             zamanaba.Start();
+            }
+            else
+            {
+                MessageBox.Show("Herhangi bir alan seçmediniz.", "HATA", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

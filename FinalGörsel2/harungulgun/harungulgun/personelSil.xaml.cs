@@ -51,7 +51,9 @@ namespace harungulgun
         }
         private void persil_Click(object sender, RoutedEventArgs e)
         {
-            bag.Open();
+            if (personelgoster.SelectedIndex != -1)
+            {
+                bag.Open();
             DataRowView satir = (DataRowView)personelgoster.SelectedItem;
             if (personelgoster.SelectedIndex == -1) return;
             MySqlCommand sil = new MySqlCommand("delete from personel where id='" + satir[0] + "'", bag);
@@ -62,6 +64,11 @@ namespace harungulgun
             zamanab.Interval = new TimeSpan(0, 0, 3);
             zamanab.Tick += Zamanab_Tick;
             zamanab.Start();
+            }
+            else
+            {
+                MessageBox.Show("Herhangi bir alan seçmediniz.", "HATA", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
