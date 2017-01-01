@@ -13,7 +13,7 @@
                 <GradientStop Color="#FF1D0A0A" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <DataGrid x:Name="sildata" Margin="6,38,6.533,54.353"/>
+        <DataGrid x:Name="sildata" Margin="6,38,6.533,54.353" Background="#FF1D9999"/>
         <Menu x:Name="menu" Height="30" VerticalAlignment="Top" Margin="5.726,2.667,3.699,0">
             <Menu.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -38,7 +38,7 @@
 
 
         </Menu>
-        <Button x:Name="urunekle" Content="Seçili Ürünü Sil" Margin="10,0,10,8.666" VerticalAlignment="Bottom" Height="39.353" FontSize="20" FontStyle="Italic">
+        <Button x:Name="urunekle" Content="Seçili Ürünü Sil" Margin="10,0,10,8.666" VerticalAlignment="Bottom" Height="39.353" FontSize="20" FontStyle="Italic" Click="urunekle_Click">
             <Button.CacheMode>
                 <BitmapCache/>
             </Button.CacheMode>
