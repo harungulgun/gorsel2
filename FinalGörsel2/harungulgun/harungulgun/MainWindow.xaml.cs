@@ -24,7 +24,7 @@ namespace harungulgun
         public MainWindow()
         {
             InitializeComponent();
-          
+
         }
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
         private void button_Click(object sender, RoutedEventArgs e)

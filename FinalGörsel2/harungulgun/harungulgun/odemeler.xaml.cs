@@ -63,20 +63,6 @@ namespace harungulgun
             this.Hide();
             
         }
-
-        private void urunekle_Click(object sender, RoutedEventArgs e)
-        {
-            bag.Open();
-            MySqlCommand ekle = new MySqlCommand("INSERT INTO odemeler(odemeTuru,OdemeTipi,aciklama,tutar) VALUES ('" + odemetur.Text + "','" + odemetipi.Text+ "','" + aciklama.Text + "','" + tutar.Text + "')", bag);
-            ekle.ExecuteNonQuery();
-            ekle.Dispose();
-            bag.Close();
-            zamanab.Interval = new TimeSpan(0, 0, 3);
-            zamanab.Tick += Zamanab_Tick;
-            zamanab.Start();
-            odemeliste();
-        }
-
         private void odemeyisil_Click(object sender, RoutedEventArgs e)
         {
             if (odemelistele.SelectedIndex != -1)
@@ -97,6 +83,20 @@ namespace harungulgun
             {
                 MessageBox.Show("Herhangi bir alan seçmediniz.","HATA",MessageBoxButton.OK,MessageBoxImage.Error);
             }
+           
+        }
+
+        private void odemeekle_Click(object sender, RoutedEventArgs e)
+        {
+            bag.Open();
+            MySqlCommand ekle = new MySqlCommand("INSERT INTO odemeler(odemeTuru,OdemeTipi,aciklama,tutar) VALUES ('" + odemetur.Text + "','" + odemetipi.Text + "','" + aciklama.Text + "','" + tutar.Text + "')", bag);
+            ekle.ExecuteNonQuery();
+            ekle.Dispose();
+            bag.Close();
+            zamanab.Interval = new TimeSpan(0, 0, 2);
+            zamanab.Tick += Zamanab_Tick;
+            zamanab.Start();
+            odemeliste();
            
         }
     }

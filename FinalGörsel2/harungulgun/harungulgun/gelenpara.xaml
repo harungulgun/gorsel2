@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="gelenpara" Height="349.107" Width="562.376">
-    <Grid Margin="0,0,2.346,0.673">
+        Title="gelenpara" Height="667" Width="834">
+    <Grid Margin="0,0,2,-21">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
                 <GradientStop Color="#FF1D0A0A" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label x:Name="label_Copy2" Content="Kimden :" Margin="43.22,32.343,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" Height="29.727" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94.327"/>
-        <TextBox BorderBrush="Bisque" x:Name="urunad" Height="25.861" Margin="130.255,35.389,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" ToolTip="Tc numarası Gir" HorizontalAlignment="Left" Width="91.605"/>
-        <Label x:Name="label_Copy" Content="Tutar :" Margin="43.22,79.343,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" Height="29.727" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94.327"/>
-        <TextBox BorderBrush="Bisque" x:Name="tutar" Height="25.861" Margin="129.255,77.389,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" ToolTip="Tc numarası Gir" HorizontalAlignment="Left" Width="91.605"/>
-        <Button x:Name="kasayaekle" Content="Kasaya Ekle&#xA;" Margin="44.195,142.701,0,135.38" FontSize="20" FontStyle="Italic" HorizontalAlignment="Left" Width="174.569">
+        <Label x:Name="label_Copy2" Content="Kimden :" Margin="33.22,32.343,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" Height="29.727" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94.327"/>
+        <TextBox BorderBrush="Bisque" x:Name="kimden" Height="25.861" Margin="120.255,35.389,289,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" ToolTip="Tc numarası Gir"/>
+        <Label x:Name="label_Copy" Content="Tutar :" Margin="34.22,111.84,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" Height="25.861" VerticalAlignment="Top" HorizontalAlignment="Left" Width="71.78"/>
+        <TextBox BorderBrush="Bisque" x:Name="tutar" Height="25.861" Margin="120.255,111.84,289,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" ToolTip="Tc numarası Gir"/>
+        <Button x:Name="kasayaekle" Content="Kasaya Ekle&#xA;" Margin="0,32.343,17.461,0" FontSize="20" FontStyle="Italic" Height="105.358" VerticalAlignment="Top" HorizontalAlignment="Right" Width="252.166" Click="kasayaekle_Click">
             <Button.CacheMode>
                 <BitmapCache/>
             </Button.CacheMode>
@@ -31,6 +31,24 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Label x:Name="paratipilabel" Content="Para Tipi:&#xA;" Margin="34.22,69.731,269.627,0" Background="{x:Null}" Foreground="#FFBFBFBF" Height="30.269" VerticalAlignment="Top"/>
+        <ComboBox x:Name="paratipi" Margin="120.255,78.04,289,0" VerticalAlignment="Top" Height="21.96"/>
+        <DataGrid x:Name="gelenlistele" Margin="34.22,235,45,42"/>
+        <Button x:Name="kasadansil" Content="Seçili İşlemi Sil" Margin="34.22,185,45,0" FontSize="20" FontStyle="Italic" Height="45" VerticalAlignment="Top" Click="kasadansil_Click" >
+            <Button.CacheMode>
+                <BitmapCache/>
+            </Button.CacheMode>
+            <Button.BindingGroup>
+                <BindingGroup/>
+            </Button.BindingGroup>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Rectangle Fill="#FF4C4CAA" Height="34.24" Margin="0,145.76,0,0" Stroke="Black" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

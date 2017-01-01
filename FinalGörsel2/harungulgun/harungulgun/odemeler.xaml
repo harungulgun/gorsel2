@@ -48,20 +48,12 @@
         <ComboBox x:Name="odemetur" Grid.Column="1" Margin="-45.09,46.5,0,0" VerticalAlignment="Top" Height="21.96" HorizontalAlignment="Left" Width="159"/>
         <Label x:Name="label" Content="Ödeme Türü:&#xA;" Margin="19.387,41.03,-13.652,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFBFBFBF" Height="30.269"/>
         <Label x:Name="label_Copy" Content="Ödeme Tipi:&#xA;" Margin="18.72,85.343,-12.985,111.534" Background="{x:Null}" Foreground="#FFBFBFBF"/>
-        <ComboBox x:Name="odemetipi" Grid.Column="1" Margin="-47.09,90.813,0,0" VerticalAlignment="Top" Height="21.96" HorizontalAlignment="Left" Width="159"/>
-        <TextBlock x:Name="aciklama" Margin="-45.983,124.146,0,41.54" TextWrapping="NoWrap" Foreground="#FFE6DFDF" Grid.Column="1" HorizontalAlignment="Left" Width="156.737">
-            <TextBlock.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FFDCC8C8" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBlock.Background>
-        </TextBlock>
+        <ComboBox x:Name="odemetipi" Grid.Column="1" Margin="-45.09,85.343,0,111.534" HorizontalAlignment="Left" Width="159"/>
         <Label x:Name="label_Copy1" Content="Açıklama Ekle:&#xA;" Margin="14.22,0,59.062,69.534" VerticalAlignment="Bottom" Background="{x:Null}" Foreground="#FFBFBFBF" Height="30.269"/>
         <Label x:Name="label_Copy2" Content="Tutar:&#xA;" Margin="18.22,0,51.515,-6.924" Background="{x:Null}" Foreground="#FFBFBFBF" Height="29.727" VerticalAlignment="Bottom"/>
-        <TextBox BorderBrush="Bisque" x:Name="tutar" Height="25.861" Margin="-43.807,0,0,-2.104" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" ToolTip="Tc numarası Gir" HorizontalAlignment="Left" Width="154.605" Grid.Column="1"/>
+        <TextBox BorderBrush="Bisque" x:Name="tutar" Height="25.861" Margin="-45.09,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" ToolTip="Tc numarası Gir" HorizontalAlignment="Left" Width="157" Grid.Column="1"/>
         <DataGrid x:Name="odemelistele" Grid.Column="1" Margin="131.938,48,28.426,69.291" Grid.RowSpan="2"/>
-        <Button x:Name="urunekle" Content="Ödemeyi Gerçekleştir&#xD;&#xA;" Margin="45.195,39.555,-82.702,69.291" FontSize="20" FontStyle="Italic" Grid.Row="1" Click="urunekle_Click">
+        <Button x:Name="odemeekle" Content="Ödemeyi Gerçekleştir&#xD;&#xA;" Margin="45.195,39.555,-82.702,69.291" FontSize="20" FontStyle="Italic" Grid.Row="1" Click="odemeekle_Click">
             <Button.CacheMode>
                 <BitmapCache/>
             </Button.CacheMode>
@@ -89,5 +81,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <TextBox BorderBrush="Bisque" x:Name="aciklama" Height="53.249" Margin="-47.09,0,0,42.146" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" ToolTip="Tc numarası Gir" HorizontalAlignment="Left" Width="159" Grid.Column="1"/>
     </Grid>
 </Window>

@@ -68,5 +68,13 @@ namespace harungulgun
             sil.Show();
             this.Hide();
         }
+
+        private void MenuItem_Click_6(object sender, RoutedEventArgs e)
+        {
+            gelenpara para = new gelenpara();
+            para.Show();
+            this.Hide();
+
+        }
     }
 }
