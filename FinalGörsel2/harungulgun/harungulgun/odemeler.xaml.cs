@@ -23,7 +23,6 @@ namespace harungulgun
     public partial class odemeler : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
-        DispatcherTimer zamanab;
         public odemeler()
         {
             InitializeComponent();
@@ -37,8 +36,6 @@ namespace harungulgun
             odemetipi.Items.Add("USD");
             odemetipi.Items.Add("Euro");
             odemetipi.Items.Add("Çek");
-
-            zamanab = new DispatcherTimer();
             odemeliste();
         }
         private void odemeliste()
@@ -48,12 +45,6 @@ namespace harungulgun
             DataTable tb = new DataTable();
             ad.Fill(tb);
             odemelistele.ItemsSource = tb.AsDataView();
-
-        }
-        private void Zamanab_Tick(object sender, EventArgs e)
-        {
-
-            odemeliste();
 
         }
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -75,9 +66,7 @@ namespace harungulgun
                 sil.ExecuteNonQuery();
                 sil.Dispose();
                 bag.Close();
-                zamanab.Interval = new TimeSpan(0, 0, 3);
-                zamanab.Tick += Zamanab_Tick;
-                zamanab.Start();
+                odemeliste();
             }
             else
             {
@@ -93,9 +82,6 @@ namespace harungulgun
             ekle.ExecuteNonQuery();
             ekle.Dispose();
             bag.Close();
-            zamanab.Interval = new TimeSpan(0, 0, 2);
-            zamanab.Tick += Zamanab_Tick;
-            zamanab.Start();
             odemeliste();
            
         }

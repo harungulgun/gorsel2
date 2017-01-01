@@ -23,19 +23,17 @@ namespace harungulgun
     public partial class personelEkle : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
-        DispatcherTimer zaman;
+
         public personelEkle()
         {
             InitializeComponent();
             cinsiyet.Items.Add("Erkek");
             cinsiyet.Items.Add("Kız");
-            zaman = new DispatcherTimer();
-            zaman.Interval = new TimeSpan(0, 0, 1);
-            zaman.Tick += Zaman_Tick;
-            zaman.Start();
+
+            personeligoster();
           
         }
-        private void Zaman_Tick(object sender, EventArgs e)
+        private void personeligoster()
         {
             MySqlCommand cm = new MySqlCommand("Select * from personel", bag);
             MySqlDataAdapter ad = new MySqlDataAdapter(cm);
@@ -67,6 +65,7 @@ namespace harungulgun
             ekle.ExecuteNonQuery();
             ekle.Dispose();
             bag.Close();
+            personeligoster();
         }
     }
 }

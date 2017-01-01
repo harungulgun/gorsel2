@@ -23,11 +23,9 @@ namespace harungulgun
     public partial class urunsil : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
-        DispatcherTimer zamanaba;
         public urunsil()
         {
             InitializeComponent();
-            zamanaba = new DispatcherTimer();
             urunlerigoster();
         }
         private void urunlerigoster()
@@ -37,14 +35,7 @@ namespace harungulgun
             DataTable ta = new DataTable();
             ad.Fill(ta);
             sildata.ItemsSource = ta.AsDataView();
-        }
-        private void Zamanaba_Tick(object sender, EventArgs e)
-        {
-            urunlerigoster();
-            
-
-        }
-       
+        } 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             AnaEkran ana = new AnaEkran();
@@ -64,9 +55,7 @@ namespace harungulgun
             sil.ExecuteNonQuery();
             sil.Dispose();
             bag.Close();
-            zamanaba.Interval = new TimeSpan(0, 0, 3);
-            zamanaba.Tick += Zamanaba_Tick;
-            zamanaba.Start();
+            urunlerigoster();
             }
             else
             {

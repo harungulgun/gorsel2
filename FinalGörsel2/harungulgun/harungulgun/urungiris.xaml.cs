@@ -23,16 +23,12 @@ namespace harungulgun
     public partial class urungiris : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
-        DispatcherTimer zaman;
         public urungiris()
         {
             InitializeComponent();
-            zaman = new DispatcherTimer();
-            zaman.Interval = new TimeSpan(0,0,1);
-            zaman.Tick += Zaman_Tick;
-            zaman.Start();
+            urunlerigosteer();
         }
-        private void Zaman_Tick(object sender, EventArgs e)
+        private void urunlerigosteer()
         {
             MySqlCommand cm = new MySqlCommand("Select * from urunler",bag);
             MySqlDataAdapter ad = new MySqlDataAdapter(cm);
@@ -57,6 +53,7 @@ namespace harungulgun
             ekle.ExecuteNonQuery();
             ekle.Dispose();
             bag.Close();
+            urunlerigosteer();
 
         }
     }

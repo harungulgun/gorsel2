@@ -26,11 +26,9 @@ namespace harungulgun
     public partial class personelSil : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
-        DispatcherTimer zamanab;
         public personelSil()
         {
             InitializeComponent();
-            zamanab = new DispatcherTimer();
             perssgosterr();
         }
         public void perssgosterr()
@@ -41,13 +39,6 @@ namespace harungulgun
             DataTable ta = new DataTable();
             ad.Fill(ta);
             personelgoster.ItemsSource = ta.AsDataView();
-        }
-        private void Zamanab_Tick(object sender, EventArgs e)
-        {
-
-            perssgosterr();
-
-
         }
         private void persil_Click(object sender, RoutedEventArgs e)
         {
@@ -61,9 +52,7 @@ namespace harungulgun
             sil.ExecuteNonQuery();
             sil.Dispose();
             bag.Close();
-            zamanab.Interval = new TimeSpan(0, 0, 3);
-            zamanab.Tick += Zamanab_Tick;
-            zamanab.Start();
+            perssgosterr();
             }
             else
             {
