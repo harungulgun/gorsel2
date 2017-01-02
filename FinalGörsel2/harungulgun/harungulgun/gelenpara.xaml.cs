@@ -23,15 +23,24 @@ namespace harungulgun
     public partial class gelenpara : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
+        public int yap;
+        public int tog;
+        public int tok;
         public gelenpara()
         {
             InitializeComponent();
             paratipi.Items.Add("TL");
             paratipi.Items.Add("USD");
             paratipi.Items.Add("Euro");
-            paratipi.Items.Add("Çek");     
+            paratipi.Items.Add("Çek");
 
             gelenparalarlistele();
+
+
+           
+
+
+
         }
         private void gelenparalarlistele() {
 
@@ -51,8 +60,36 @@ namespace harungulgun
             bag.Close();
             gelenparalarlistele();
             bag.Close();
+            kasayadaekle();
         }
+        private void kasayadaekle()
+        {
+            bag.Open();
+            MySqlCommand kasayaekle = new MySqlCommand("INSERT INTO kasa(miktar) VALUES ('" + tutar.Text + "')", bag);
+            kasayaekle.ExecuteNonQuery();
+            kasayaekle.Dispose();
+            bag.Close();
 
+        }
+        private void kasadandasil()
+        {
+
+            /*
+                        bag.Open();
+                        DataRowView sat = (DataRowView)gelenlistele.SelectedItem;
+                        if (gelenlistele.SelectedIndex == -1) return;
+                        MySqlCommand sil = new MySqlCommand("delete from kasa where miktar='" + sat[3] + "'", bag);
+                        MySqlDataAdapter adabtor = new MySqlDataAdapter(sil);
+                        sil.ExecuteNonQuery();
+                        sil.Dispose();
+                        bag.Close();
+                        
+                        BURAYA DAHA SONRA BAKILACAK
+             */
+
+           
+
+        }
         private void kasadansil_Click(object sender, RoutedEventArgs e)
         {
             if (gelenlistele.SelectedIndex != -1)
@@ -65,6 +102,7 @@ namespace harungulgun
                 sil.ExecuteNonQuery();
                 sil.Dispose();
                 bag.Close();
+                kasadandasil();
                 gelenparalarlistele();
             }
             else

@@ -23,6 +23,7 @@ namespace harungulgun
     public partial class kasa : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
+  
         DispatcherTimer zamanart;
         public kasa()
         {
@@ -38,24 +39,24 @@ namespace harungulgun
         }
         private void Zamanart_Tick(object sender, EventArgs e)
         {
-            bag.Open();
-            MySqlCommand cmd = new MySqlCommand("select miktar from kasa ", bag);
-            int Count = Convert.ToInt32(cmd.ExecuteScalar());
 
-            if (Count != 0)
-            {
+            
 
-                MySqlDataReader oku = cmd.ExecuteReader();
-                while (oku.Read())
-                {
-                    kasatoplam.Text = oku["miktar"].ToString();
-
-                }
-            }
-            bag.Close();
-
+         
+                         bag.Open(); 
+                         MySqlCommand komut = new MySqlCommand("select sum(miktar) from kasa", bag);
+                         kasatoplam.Text = komut.ExecuteScalar().ToString();
+                         komut.ExecuteNonQuery(); 
+                         bag.Close();
+   
 
         }
 
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            AnaEkran ANA = new AnaEkran();
+            ANA.Show();
+            this.Hide();
+        }
     }
 }

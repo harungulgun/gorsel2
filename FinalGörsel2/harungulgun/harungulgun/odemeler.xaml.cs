@@ -74,7 +74,6 @@ namespace harungulgun
             }
            
         }
-
         private void odemeekle_Click(object sender, RoutedEventArgs e)
         {
             bag.Open();
@@ -83,7 +82,6 @@ namespace harungulgun
             ekle.Dispose();
             bag.Close();
             odemeliste();
-           
         }
     }
 }
