@@ -57,24 +57,25 @@
                 </LinearGradientBrush>
             </Menu.Background>
             <MenuItem Header="Ekle" FontSize="19">
-                <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974"/>
+                <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Personel Sil"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_2"/>
             </MenuItem>
             <MenuItem Header="Ürünler" FontSize="19">
-                <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974"/>
-                <MenuItem Header="Ürün Girişi Yap"  FontSize="15" Background="#FF789974"/>
-                <MenuItem Header="Ürün Sil"  FontSize="15" Background="#FFBD3434" />
+                <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974" Click="MenuItem_Click_3"/>
+                <MenuItem Header="Ürün Girişi Yap"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_4"/>
+                <MenuItem Header="Ürün Sil"  FontSize="15" Background="#FFBD3434" Click="MenuItem_Click_5" />
             </MenuItem>
-            <MenuItem Header="Hesaplar" FontSize="19" >
-                <MenuItem Header="Ödemeler" Background="#FF789974"/>
-                <MenuItem Header="Gelen Para" Background="#FF789974"/>
-                <MenuItem Header="KASA" Background="#FF789974"/>
+            <MenuItem Header="Hesaplar" FontSize="19" Click="MenuItem_Click_6" >
+                <MenuItem Header="Ödemeler" Background="#FF789974" Click="MenuItem_Click_7"/>
+                <MenuItem Header="Gelen Para" Background="#FF789974" Click="MenuItem_Click_8"/>
+                <MenuItem Header="KASA" Background="#FF789974" Click="MenuItem_Click_9"/>
             </MenuItem>
             <MenuItem Header="Anasayfa" FontSize="19" Click="MenuItem_Click"/>
 
 
         </Menu>
         <DataGrid x:Name="kasasillistele" Margin="264.22,259.017,17,19.983"/>
-        <Button x:Name="eklenensil" Content="Ekleneni Sil&#xA;" Margin="0,170.343,151.461,0" FontSize="20" FontStyle="Italic" Height="33.358" VerticalAlignment="Top" Click="eklenensil_Click" HorizontalAlignment="Right" Width="252.166">
+        <Button x:Name="eklenensil" Content="Ekleneni Sil&#xA;" Margin="262.873,168.343,313.461,0" FontSize="20" FontStyle="Italic" Height="33.358" VerticalAlignment="Top" Click="eklenensil_Click">
             <Button.CacheMode>
                 <BitmapCache/>
             </Button.CacheMode>

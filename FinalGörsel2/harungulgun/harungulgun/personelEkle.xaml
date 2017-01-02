@@ -21,20 +21,20 @@
                 </LinearGradientBrush>
             </Menu.Background>
             <MenuItem Header="Ekle" FontSize="19">
-                <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974"/>
+                <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_8"/>
+                <MenuItem Header="Personel Sil"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_9" />
             </MenuItem>
             <MenuItem Header="Ürünler" FontSize="19">
-                <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974"/>
-                <MenuItem Header="Ürün Girişi Yap"  FontSize="15" Background="#FF789974"/>
-                <MenuItem Header="Ürün Sil"  FontSize="15" Background="#FFBD3434" />
+                <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Ürün Girişi Yap"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_3"/>
+                <MenuItem Header="Ürün Sil"  FontSize="15" Background="#FFBD3434" Click="MenuItem_Click_4" />
             </MenuItem>
             <MenuItem Header="Hesaplar" FontSize="19" >
-                <MenuItem Header="Ödemeler" Background="#FF789974"/>
-                <MenuItem Header="Gelen Para" Background="#FF789974"/>
-                <MenuItem Header="KASA" Background="#FF789974"/>
+                <MenuItem Header="Ödemeler" Background="#FF789974" Click="MenuItem_Click_5"/>
+                <MenuItem Header="Gelen Para" Background="#FF789974" Click="MenuItem_Click_6"/>
+                <MenuItem Header="KASA" Background="#FF789974" Click="MenuItem_Click_7"/>
             </MenuItem>
-            <MenuItem Header="Anasayfa" FontSize="19" Click="MenuItem_Click" >
-            </MenuItem>
+            <MenuItem Header="Anasayfa" FontSize="19" Click="MenuItem_Click" />
 
 
         </Menu>

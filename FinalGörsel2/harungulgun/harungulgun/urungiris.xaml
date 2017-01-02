@@ -20,7 +20,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <TextBox BorderBrush="Bisque" x:Name="urunad" Height="25.861" Margin="168.255,57.889,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" ToolTip="Tc numarası Gir" HorizontalAlignment="Left" Width="174.105"/>
-        <TextBox  BorderBrush="Bisque" x:Name="urunadet" Height="25.861" Margin="168.255,109.611,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" ToolTip="Personel Adını Gir" HorizontalAlignment="Left" Width="174.105"/>
+        <TextBox  BorderBrush="Bisque" x:Name="urunadet" Height="25.861" Margin="168.255,109.611,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Personel Adını Gir" HorizontalAlignment="Left" Width="174.105"/>
         <TextBox BorderBrush="Bisque" x:Name="urunuret" TextWrapping="Wrap" Text="" ToolTip="Personel Soyadını Gir" Margin="167.255,149.241,0,0" Height="25.86" VerticalAlignment="Top" HorizontalAlignment="Left" Width="174.105" d:LayoutOverrides="VerticalAlignment"/>
         <Label x:Name="label" Content="Ürün Adı:&#xA;" Margin="21.72,56.53,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFBFBFBF" Height="30.269" HorizontalAlignment="Left" Width="105.356"/>
         <Label x:Name="label_Copy" Content="Ürün Adedi:&#xA;" Margin="21.72,103.513,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="75.891" Height="39.353" VerticalAlignment="Top"/>
@@ -42,7 +42,7 @@
         </Button>
         <DataGrid x:Name="urungoster" Margin="366.76,57.889,-55.771,23.486" Background="#FF78705A" BorderBrush="#FF0675E0" Foreground="#FF3E6430"/>
         <TextBox BorderBrush="Bisque" x:Name="urunbarkod" TextWrapping="Wrap" Text="" ToolTip=" Kullanıcı Adını Gir" Margin="167.035,193.279,0,0" Height="25.86" VerticalAlignment="Top" HorizontalAlignment="Left" Width="174.105" d:LayoutOverrides="VerticalAlignment"/>
-        <TextBox BorderBrush="Bisque" x:Name="urunfiyat" TextWrapping="Wrap" Text="30" ToolTip="Tarihi Gir" Margin="167.035,245.001,0,0" Height="25.86" VerticalAlignment="Top" HorizontalAlignment="Left" Width="174.105"/>
+        <TextBox BorderBrush="Bisque" x:Name="urunfiyat" TextWrapping="Wrap" ToolTip="Tarihi Gir" Margin="167.035,245.001,0,0" Height="25.86" VerticalAlignment="Top" HorizontalAlignment="Left" Width="174.105"/>
         <Label x:Name="label_Copy4" Content="Barkod Numarası:&#xD;&#xA;&#xA;" Margin="19.5,187.733,0,0" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="110.891" Height="39.352" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy5" Content="Fiyatı:&#xD;&#xA;" Margin="23.5,0,0,189.414" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="83.035" Height="43.852" VerticalAlignment="Bottom"/>
         <DatePicker Name="giristarih" Margin="168,0,0,158.447" VerticalAlignment="Bottom" Height="24.031" HorizontalAlignment="Left" Width="179.64"/>
@@ -54,17 +54,18 @@
                 </LinearGradientBrush>
             </Menu.Background>
             <MenuItem Header="Ekle" FontSize="19">
-                <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974"/>
+                <MenuItem Header="Personel Ekle"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Personel Sil"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_2"/>
             </MenuItem>
             <MenuItem Header="Ürünler" FontSize="19">
-                <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974"/>
-                <MenuItem Header="Ürün Girişi Yap"  FontSize="15" Background="#FF789974"/>
-                <MenuItem Header="Ürün Sil"  FontSize="15" Background="#FFBD3434" />
+                <MenuItem Header="Ürünleri Göster" FontSize="15" Background="#FF789974" Click="MenuItem_Click_3"/>
+                <MenuItem Header="Ürün Girişi Yap"  FontSize="15" Background="#FF789974" Click="MenuItem_Click_4"/>
+                <MenuItem Header="Ürün Sil"  FontSize="15" Background="#FFBD3434" Click="MenuItem_Click_5" />
             </MenuItem>
             <MenuItem Header="Hesaplar" FontSize="19" >
-                <MenuItem Header="Ödemeler" Background="#FF789974"/>
-                <MenuItem Header="Gelen Para" Background="#FF789974"/>
-                <MenuItem Header="KASA" Background="#FF789974"/>
+                <MenuItem Header="Ödemeler" Background="#FF789974" Click="MenuItem_Click_6"/>
+                <MenuItem Header="Gelen Para" Background="#FF789974" Click="MenuItem_Click_7"/>
+                <MenuItem Header="KASA" Background="#FF789974" Click="MenuItem_Click_8"/>
             </MenuItem>
             <MenuItem Header="Anasayfa" FontSize="19" Click="MenuItem_Click" />
 

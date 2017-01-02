@@ -51,5 +51,61 @@ namespace harungulgun
             ana.Show();
             this.Hide();
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            personelEkle per = new personelEkle();
+            per.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            personelSil persil = new personelSil();
+            persil.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            urungoster urungso = new urungoster();
+            urungso.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
+        {
+            urungiris gir = new urungiris();
+            gir.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
+        {
+            urunsil silurun = new urunsil();
+            silurun.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_6(object sender, RoutedEventArgs e)
+        {
+            odemeler ode = new odemeler();
+            ode.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_7(object sender, RoutedEventArgs e)
+        {
+            gelenpara pa = new gelenpara();
+            pa.Show();
+            this.Hide();
+        }
+
+        private void MenuItem_Click_8(object sender, RoutedEventArgs e)
+        {
+            kasa kas = new kasa();
+            kas.Show();
+            this.Hide();
+        }
     }
 }
