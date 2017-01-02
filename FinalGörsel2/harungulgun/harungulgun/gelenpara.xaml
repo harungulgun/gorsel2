@@ -73,6 +73,21 @@
 
 
         </Menu>
+        <DataGrid x:Name="kasasillistele" Margin="264.22,259.017,17,19.983"/>
+        <Button x:Name="eklenensil" Content="Ekleneni Sil&#xA;" Margin="0,170.343,151.461,0" FontSize="20" FontStyle="Italic" Height="33.358" VerticalAlignment="Top" Click="eklenensil_Click" HorizontalAlignment="Right" Width="252.166">
+            <Button.CacheMode>
+                <BitmapCache/>
+            </Button.CacheMode>
+            <Button.BindingGroup>
+                <BindingGroup/>
+            </Button.BindingGroup>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

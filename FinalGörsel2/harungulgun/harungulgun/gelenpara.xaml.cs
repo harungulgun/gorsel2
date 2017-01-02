@@ -37,8 +37,10 @@ namespace harungulgun
             gelenparalarlistele();
 
 
-           
 
+            kasasillistele.Visibility = Visibility.Hidden;
+            kasadansil.Visibility = Visibility.Hidden;
+          
 
 
         }
@@ -50,7 +52,14 @@ namespace harungulgun
             ad.Fill(tb);
             gelenlistele.ItemsSource = tb.AsDataView();
 
-        }
+        }/*
+        private void gelenkasalistele(){
+            MySqlCommand cm = new MySqlCommand("Select * from kasa", bag);
+            MySqlDataAdapter ad = new MySqlDataAdapter(cm);
+            DataTable tb = new DataTable();
+            ad.Fill(tb);
+            kasasillistele.ItemsSource = tb.AsDataView();
+        }*/
         private void kasayaekle_Click(object sender, RoutedEventArgs e)
         {
             bag.Open();
@@ -61,11 +70,14 @@ namespace harungulgun
             gelenparalarlistele();
             bag.Close();
             kasayadaekle();
+            kkgoster();
+            kasasillistele.Visibility = Visibility.Visible;
+
         }
         private void kasayadaekle()
         {
             bag.Open();
-            MySqlCommand kasayaekle = new MySqlCommand("INSERT INTO kasa(miktar) VALUES ('" + tutar.Text + "')", bag);
+            MySqlCommand kasayaekle = new MySqlCommand("INSERT INTO kasa(kimden,paratipi,miktar) VALUES ('" + kimden.Text + "','" + paratipi.Text + "','" + tutar.Text + "')", bag);
             kasayaekle.ExecuteNonQuery();
             kasayaekle.Dispose();
             bag.Close();
@@ -73,8 +85,8 @@ namespace harungulgun
         }
         private void kasadandasil()
         {
-
             /*
+            
                         bag.Open();
                         DataRowView sat = (DataRowView)gelenlistele.SelectedItem;
                         if (gelenlistele.SelectedIndex == -1) return;
@@ -85,30 +97,78 @@ namespace harungulgun
                         bag.Close();
                         
                         BURAYA DAHA SONRA BAKILACAK
-             */
+             
 
-           
+           */
+
+        }
+        private void yoruldum()
+        {
+            MySqlCommand cma = new MySqlCommand("Select * from gelenpara", bag);
+            MySqlDataAdapter ad = new MySqlDataAdapter(cma);
+            DataTable tb = new DataTable();
+            ad.Fill(tb);
+            gelenlistele.ItemsSource = tb.AsDataView();
+
 
         }
         private void kasadansil_Click(object sender, RoutedEventArgs e)
         {
-            if (gelenlistele.SelectedIndex != -1)
-            {
-                bag.Open();
-                DataRowView satir = (DataRowView)gelenlistele.SelectedItem;
-                if (gelenlistele.SelectedIndex == -1) return;
-                MySqlCommand sil = new MySqlCommand("delete from gelenpara where id='" + satir[0] + "'", bag);
-                MySqlDataAdapter adabtor = new MySqlDataAdapter(sil);
-                sil.ExecuteNonQuery();
-                sil.Dispose();
-                bag.Close();
-                kasadandasil();
-                gelenparalarlistele();
-            }
-            else
-            {
-                MessageBox.Show("Herhangi bir alan seçmediniz.", "HATA", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+           
+                if (gelenlistele.SelectedIndex != -1)
+                {
+                    bag.Open();
+                    DataRowView satir = (DataRowView)gelenlistele.SelectedItem;
+                    if (gelenlistele.SelectedIndex == -1) return;
+                    MySqlCommand sillll = new MySqlCommand("delete from gelenpara where id='" + satir[0] + "'", bag);
+                    MySqlDataAdapter adabtoor = new MySqlDataAdapter(sillll);
+                    sillll.ExecuteNonQuery();
+                    sillll.Dispose();
+
+
+                    bag.Close();
+                    kasadandasil();
+                    kkgoster();
+                    yoruldum();
+
+                    return;
+
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Herhangi bir alan seçmediniz.", "HATA", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            
+           
+                if (kasasillistele.SelectedIndex != -1)
+                {
+                    bag.Open();
+                    DataRowView satir = (DataRowView)kasasillistele.SelectedItem;
+                    if (kasasillistele.SelectedIndex == -1) return;
+                    MySqlCommand sillll = new MySqlCommand("delete from kasa where id='" + satir[0] + "'", bag);
+                    MySqlDataAdapter adabtoor = new MySqlDataAdapter(sillll);
+                    sillll.ExecuteNonQuery();
+                    sillll.Dispose();
+
+
+                    bag.Close();
+                    kasadandasil();
+                    kkgoster();
+                    yoruldum();
+                    return;
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Herhangi bir alan seçmediniz.", "HATA", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            
+            
+
+            
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -116,6 +176,27 @@ namespace harungulgun
             AnaEkran ana = new AnaEkran();
             ana.Show();
             this.Hide();
+        }
+        kasa kk = new kasa();
+        private void kkgoster()
+        {
+            MySqlCommand cm = new MySqlCommand("Select * from kasa", bag);
+            MySqlDataAdapter ad = new MySqlDataAdapter(cm);
+            DataTable tb = new DataTable();
+            ad.Fill(tb);
+            kasasillistele.ItemsSource = tb.AsDataView();
+
+        }
+
+        private void eklenensil_Click(object sender, RoutedEventArgs e)
+        {
+            kasasillistele.Visibility = Visibility.Visible;
+            kasadansil.Visibility = Visibility.Visible;
+            kasayaekle.Visibility = Visibility.Visible;
+            kkgoster();
+            eklenensil.Visibility = Visibility.Visible;
+            girenparayisil.Visibility = Visibility.Visible;
+
         }
     }
 }
