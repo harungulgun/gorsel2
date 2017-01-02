@@ -23,7 +23,6 @@ namespace harungulgun
     public partial class gelenpara : Window
     {
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
-        DispatcherTimer zamanabaab;
         public gelenpara()
         {
             InitializeComponent();
@@ -72,6 +71,13 @@ namespace harungulgun
             {
                 MessageBox.Show("Herhangi bir alan seçmediniz.", "HATA", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            AnaEkran ana = new AnaEkran();
+            ana.Show();
+            this.Hide();
         }
     }
 }

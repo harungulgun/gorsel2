@@ -31,7 +31,7 @@
             <MenuItem Header="Hesaplar" FontSize="19" >
                 <MenuItem Header="Ödemeler" Background="#FF789974" Click="MenuItem_Click_4"/>
                 <MenuItem Header="Gelen Para" Background="#FF789974" Click="MenuItem_Click_6"/>
-                <MenuItem Header="KASA" Background="#FF789974"/>
+                <MenuItem Header="KASA" Background="#FF789974" Click="MenuItem_Click_7"/>
             </MenuItem>
 
         </Menu>

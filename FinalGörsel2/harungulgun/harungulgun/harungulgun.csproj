@@ -76,6 +76,9 @@
     <Compile Include="gelenpara.xaml.cs">
       <DependentUpon>gelenpara.xaml</DependentUpon>
     </Compile>
+    <Compile Include="kasa.xaml.cs">
+      <DependentUpon>kasa.xaml</DependentUpon>
+    </Compile>
     <Compile Include="odemeler.xaml.cs">
       <DependentUpon>odemeler.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="gelenpara.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="kasa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,13 +182,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="exit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="exit1.png" />
+    <Resource Include="money.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

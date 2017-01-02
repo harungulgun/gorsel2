@@ -76,5 +76,12 @@ namespace harungulgun
             this.Hide();
 
         }
+
+        private void MenuItem_Click_7(object sender, RoutedEventArgs e)
+        {
+            kasa k = new kasa();
+            this.Hide();
+            k.Show();  
+        }
     }
 }
