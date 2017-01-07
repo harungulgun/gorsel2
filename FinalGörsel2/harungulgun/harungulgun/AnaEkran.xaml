@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="AnaEkran" Height="562" Width="814" Background="#FF1D0A0A" MaxWidth="814" MaxHeight="562">
+        Title="AnaEkran" Height="562" Width="814" Background="#FF1D0A0A" MaxWidth="814" MaxHeight="562"  MinWidth="814" MinHeight="562"  >
     <Grid Background="#FF1D0A0A">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="240*"/>

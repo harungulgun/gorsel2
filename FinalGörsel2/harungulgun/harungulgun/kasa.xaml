@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="kasa" Height="463.613" Width="676.581">
+        Title="kasa" Height="463.613" Width="676.581" MaxWidth="676.581" MaxHeight="463.613" MinWidth="676.581" MinHeight="463.613">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="28*"/>

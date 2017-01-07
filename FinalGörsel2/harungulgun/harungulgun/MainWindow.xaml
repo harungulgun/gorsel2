@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" MaxHeight="350" MaxWidth="525" MinHeight="350" MinWidth="525">
     <Grid Background="#FF1D0A0A">
         <Rectangle Fill="#FF161619" Margin="10,24,10,10" Stroke="Black"/>
-        <Label x:Name="label" Content="Kullanıcıa Adı:&#xA;" Margin="130,116,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFBFBFBF" Height="26.92" HorizontalAlignment="Left" Width="85"/>
-        <Label x:Name="label_Copy" Content="Parola:&#xA;" Margin="130,147.92,0,136.08" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="85"/>
-        <TextBox BorderBrush="Bisque" x:Name="kulad" HorizontalAlignment="Right" Height="23" Margin="0,116,62,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="195" ToolTip="Kullanıcı Adını Gir"/>
-        <TextBox BorderBrush="Bisque" x:Name="parola" HorizontalAlignment="Right" TextWrapping="Wrap" Text="" Width="195" ToolTip="Şifreni Gir" Margin="0,157,62,0" Height="23" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Giriş Yap" Margin="0,0,87,79" VerticalAlignment="Bottom" Height="35" FontSize="20" HorizontalAlignment="Right" Width="130" Click="button_Click" FontStyle="Italic">
+        <Label x:Name="label" Content="Kullanıcıa Adı:&#xA;" Margin="135,118.08,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFBFBFBF" Height="26.92" HorizontalAlignment="Left" Width="85"/>
+        <Label x:Name="label_Copy" Content="Parola:&#xA;" Margin="135,155,0,129" Background="{x:Null}" Foreground="#FFBFBFBF" HorizontalAlignment="Left" Width="85"/>
+        <TextBox BorderBrush="Bisque" x:Name="kulad" HorizontalAlignment="Right" Height="23" Margin="0,113,63,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="195" ToolTip="Kullanıcı Adını Gir"/>
+        <Button x:Name="button" Content="Giriş Yap" Margin="0,0,88,70" VerticalAlignment="Bottom" Height="35" FontSize="20" HorizontalAlignment="Right" Width="130" Click="button_Click" FontStyle="Italic">
             <Button.CacheMode>
                 <BitmapCache/>
             </Button.CacheMode>
@@ -36,5 +35,6 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <PasswordBox ToolTip="Şifreni Gir" BorderBrush="Bisque" x:Name="parola" Margin="0,0,62,136" RenderTransformOrigin="0.459,-1.402" Height="23" Width="195" VerticalAlignment="Bottom" HorizontalAlignment="Right" d:LayoutOverrides="Width"/>
     </Grid>
 </Window>

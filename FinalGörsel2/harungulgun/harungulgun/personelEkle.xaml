@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="personelEkle" Height="647" Width="999" Background="Black">
+        Title="personelEkle" Height="647" Width="999" Background="Black" MaxHeight="647" MaxWidth="999" MinHeight="647" MinWidth="999">
     <Grid Margin="10,60,-8,27" RenderTransformOrigin="0.474,0.559">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

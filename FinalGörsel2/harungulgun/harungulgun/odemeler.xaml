@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="odemeler" Height="407.845" Width="790.426">
+        Title="odemeler" Height="407.845" Width="790.426" MaxHeight="407.845" MaxWidth="790.426" MinHeight="407.845" MinWidth="790.426">
     <Grid Margin="0,0,3.5,1.5">
         <Grid.RowDefinitions>
             <RowDefinition Height="164*"/>

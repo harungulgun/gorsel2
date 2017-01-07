@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="urungoster" Height="536.75" Width="758.73">
+        Title="urungoster" Height="536.75" Width="758.73" MaxHeight="536.75" MaxWidth="758.73" MinHeight="536.75" MinWidth="758.73" >
     <Grid Margin="0,0,0.98,0">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

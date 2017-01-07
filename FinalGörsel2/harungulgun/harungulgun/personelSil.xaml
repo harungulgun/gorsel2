@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="personelSil" Height="507" Width="679">
+        Title="personelSil" Height="507" Width="679" MaxHeight="507" MaxWidth="679" MinHeight="507" MinWidth="679" >
     <Grid Margin="0,0,2,-1">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

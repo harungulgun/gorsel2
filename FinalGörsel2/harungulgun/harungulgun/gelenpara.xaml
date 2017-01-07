@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:harungulgun"
         mc:Ignorable="d"
-        Title="gelenpara" Height="667" Width="834">
+        Title="gelenpara" Height="667" Width="834" MaxWidth="834" MaxHeight="667" MinWidth="834" MinHeight="667" >
     <Grid Margin="0,0,-2.5,0">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

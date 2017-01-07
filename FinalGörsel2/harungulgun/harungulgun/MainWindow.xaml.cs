@@ -24,14 +24,13 @@ namespace harungulgun
         public MainWindow()
         {
             InitializeComponent();
-
         }
         MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
         private void button_Click(object sender, RoutedEventArgs e)
         {
 
             bag.Open();
-            MySqlCommand girisyap = new MySqlCommand("Select * from kulgir where kulad='" + kulad.Text.ToString()+"' and sifre = '"+parola.Text.ToString()+"'",bag);
+            MySqlCommand girisyap = new MySqlCommand("Select * from kulgir where kulad='" + kulad.Text.ToString()+"' and sifre = '"+parola.Password.ToString()+"'",bag);
             MySqlDataReader rd = girisyap.ExecuteReader();
             if (rd.Read())
             {
