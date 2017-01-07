@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace harungulgun
 {
@@ -19,11 +22,26 @@ namespace harungulgun
     /// </summary>
     public partial class AnaEkran : Window
     {
+        MySqlConnection bag = new MySqlConnection("Server = localhost; Database = stoktakibi; Uid = root; Pwd=;");
+        DispatcherTimer zamana;
 
         public AnaEkran()
         {
             InitializeComponent();
-              
+            zamana = new DispatcherTimer();
+            zamana.Interval = new TimeSpan(0, 0, 1);
+            zamana.Tick += Zamana_Tick;
+            zamana.Start();
+
+        }
+        private void Zamana_Tick(object sender, EventArgs e)
+        {
+            MySqlCommand asd = new MySqlCommand("Select * from urunler", bag);
+            MySqlDataAdapter ad = new MySqlDataAdapter(asd);
+            DataTable ta = new DataTable();
+            ad.Fill(ta);
+            gostermeler.ItemsSource = ta.AsDataView();
+
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)

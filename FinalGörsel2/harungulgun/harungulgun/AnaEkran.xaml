@@ -35,9 +35,9 @@
             </MenuItem>
 
         </Menu>
-        <DataGrid x:Name="dataGrid" Margin="0,60,0,0" Background="#FF9C9595" Grid.ColumnSpan="3" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
         <TextBox x:Name="girisgkulad" Height="23" Margin="71,5,5,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="#FF748574" Grid.Column="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
-        <Label x:Name="label" Content="Girilen Ürünler Gözükecek&#xD;&#xA;&#xD;&#xA;el" Margin="-230,220,-15,256" FontSize="20" Grid.Column="1" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <DataGrid FontSize="18" x:Name="gostermeler" Margin="0,106,4.25,7.25" Background="#FF1D9999" Foreground="#FF64171E" Grid.ColumnSpan="3"/>
+        <Label FontSize="21" x:Name="label" Content="Elimizde Olan Ürünler" Margin="0,47.667,15,0" VerticalAlignment="Top" Foreground="White" Height="35.333" HorizontalAlignment="Right" Width="220"/>
 
 
     </Grid>
